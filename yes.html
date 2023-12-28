@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, maximum-scale=5.0">
+  <link rel="stylesheet" href="yes.css">
+  <meta charset="UTF-8">
+  <title>Ayyooo No Wayyy</title>
+  <style>
+    /* Style for the invisible button */
+    #invisibleButton {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      opacity: 0; /* Make the button invisible */
+      cursor: pointer;
+      z-index: 999; /* Set a high z-index to make sure it's on top */
+    }
+
+    /* Style for the click me message */
+    #clickMeMessage {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 15px;
+      color: black;
+      cursor: pointer;
+      z-index: 2147483647; /* Higher than the invisible button */
+    }
+
+    /* Style to initially hide the content */
+    .initiallyHidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="kilig initiallyHidden" id="contentToReveal">
+    <img src="kiligsss.jpeg" alt="" class="kilig1">
+    <img src="packilig.jpeg" alt="" class="kilig2">
+    <p class="ay">AYIEE Kinikilig Hotdog Ko<3</p>
+    <p class="ay">Welcome To My Life Crush, I Love You So Much Crush... Este.. Love?🤭<3</p>
+    <p class="ayy">Short Message For You:</p>
+    <p class="ayyy">Dear Crush<br>Thank you for the crushback!❤️ Now, I am so happy, like an idiot who always smiles. My parents are planning to put me in a mental hospital😂, but thank you so much for the crushback❤️. I was so happy because I thought if I confess to you, I would be rejected. Thankfully, that wasn't the case❤️.Thank you for being you, and I will be your Soldier💪. My mission is to make you happy ❤️. Once again, thank you❤️. Kinikilig ako HAHAHAHA ❤️🤭.</p>  
+    <p class="ayyy"><b>From Unknown</b></p>
+    <audio id="sound" preload="auto" src="Kinikilig.mp3"></audio>
+    <img src="crykilig.jpeg" alt="" class="kilig3">
+    <img src="excited.gif" alt="" class="kilig4">
+  </div>
+
+  <!-- The invisible, full-screen button -->
+  <button id="invisibleButton" onclick="revealContent()"></button>
+
+  <!-- Click Me message -->
+  <div id="clickMeMessage">Did You Click The Yes?<br> Please Click Anywhere.</div>
+
+  <script>
+    function revealContent() {
+      // Reveal the hidden content
+      document.getElementById('contentToReveal').style.display = 'block';
+
+      // Play the audio
+      var audio = document.getElementById('sound');
+      audio.play();
+
+      // Hide the invisible button and the "Click Me" message
+      document.getElementById('invisibleButton').style.display = 'none';
+      document.getElementById('clickMeMessage').style.display = 'none';
+    }
+  </script>
+</body>
+</html>
